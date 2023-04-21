@@ -2,7 +2,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class MovieManagerTest {
-
     @Test
     public void WithoutAdding() {
         MovieManager manager = new MovieManager();
