@@ -45,6 +45,7 @@ public class MovieManagerTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
+
     @Test
     public void AddingAll() {
         MovieManager manager = new MovieManager();
@@ -77,7 +78,7 @@ public class MovieManagerTest {
     }
 
     @Test
-    public void AddingFindLast() {
+    public void AddingFindLastLimit() {
         MovieManager manager = new MovieManager();
 
         manager.add("Film I");
