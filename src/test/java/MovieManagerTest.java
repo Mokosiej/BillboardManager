@@ -123,6 +123,21 @@ public class MovieManagerTest {
         Assertions.assertNotEquals(expected, actual);
     }
 
+    @Test
+    public void AddingFindLastFive() {
+        MovieManager manager = new MovieManager();
+
+        manager.add("Film III");
+        manager.add("Film IV");
+        manager.add("Film V");
+        manager.add("Film VI");
+        manager.add("Film VII");
+
+        String[] expected = {"Film VII", "Film VI", "Film V", "Film IV", "Film III"};
+        String[] actual = manager.findLast();
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
 
 
 }
